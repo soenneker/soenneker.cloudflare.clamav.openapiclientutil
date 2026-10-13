@@ -24,7 +24,7 @@ public sealed class CloudflareClamavOpenApiClientUtil : ICloudflareClamavOpenApi
         {
             HttpClient httpClient = await httpClientUtil.Get(token).NoSync();
 
-            var apiKey = configuration.GetValueStrict<string>("Scanner:ApiKey");
+            var apiKey = configuration.GetStringStrict("Scanner:ApiKey");
             string authHeaderName = configuration["Scanner:AuthHeaderName"] ?? "Authorization";
             string authHeaderValueTemplate = configuration["Scanner:AuthHeaderValueTemplate"] ?? "Bearer {token}";
             string authHeaderValue = authHeaderValueTemplate.Replace("{token}", apiKey, StringComparison.Ordinal);
