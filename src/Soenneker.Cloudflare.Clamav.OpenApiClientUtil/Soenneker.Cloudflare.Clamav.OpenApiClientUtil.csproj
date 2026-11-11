@@ -47,7 +47,7 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.Kiota.GenericAuthenticationProvider" Version="11.0.61" />
-        <PackageReference Include="Soenneker.Cloudflare.Clamav.HttpClients" Version="11.0.44" />
+        <PackageReference Include="Soenneker.Cloudflare.Clamav.HttpClients" Version="11.0.45" />
         <PackageReference Include="Soenneker.Cloudflare.Clamav.OpenApiClient" Version="11.0.26" />
     </ItemGroup>
 </Project>
